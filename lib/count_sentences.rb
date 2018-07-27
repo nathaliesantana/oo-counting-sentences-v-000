@@ -18,6 +18,6 @@ class String
     binding.pry
     (self.split(/[.!?]/) - [""]).length
     
-    
+    (self.split(/[.!?]/\w) - [""]).length
   end
 end
