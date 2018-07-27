@@ -16,8 +16,8 @@ class String
 
   def count_sentences
     binding.pry
-    (self.split(/[.!?]/) - [""]).length
+    #(self.split(/[.!?]/) - [""]).length
+    self.split(/[.!?]/).select {|element| element != ""}
     
-    (self.split(/[.!?]/\w) - [""]).length
   end
 end
